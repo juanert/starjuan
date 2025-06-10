@@ -1,0 +1,35 @@
+.header
+  min-height: 70vh
+  @include flex(column, space-between, center)
+  padding-top: 200px
+  background-image: url("./images/home_a_hero_d.webp")
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  &__content
+    text-align: center
+    @include flex(column, center, center, 12px)
+  &__content h1
+    font-size: 60px
+    font-weight: 700
+    line-height: 1.2
+  &__content small
+    font-size: 12px
+  &__plans
+    @include flex(row, center, center, 20px)
+    width: 100%
+    background: linear-gradient(0deg, black, rgba(255, 255, 255, 0))
+    padding: 80px 0
+    &__residential
+      @include flex(column, center, flex-start, 40px)
+      padding: 20px 40px
+      border-radius: 15px
+      background: rgba(255, 255, 255, 0.1)
+      backdrop-filter: blur(10px)
+      border: 1px solid rgba(255, 255, 255, 0.2)
+      width: 300px
+      height: 150px
+      &__title
+        @include flex(column, center, flex-start, 10px)
+      &__title p
+        font-size: 12px

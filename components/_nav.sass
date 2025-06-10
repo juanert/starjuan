@@ -1,0 +1,22 @@
+.nav
+  @include flex(row, space-between, center, 0)
+  background: rgba(54, 54, 54, 0.6)
+  backdrop-filter: blur(10px)
+  position: fixed
+  top: 0
+  width: 100vw
+  z-index: 100
+  font-size: 14px
+  font-weight: 700
+  &__logo, &__menu
+    @include espaciado(40px)
+  &__logo
+    @include flex(row, center, center, 25px)
+    img
+      width: 200px
+      margin-right: 35px
+  &__menu
+    @include flex(row, center, center, 25px)
+    img
+      width: 25px
+      height: 25px
